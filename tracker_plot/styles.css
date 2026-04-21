@@ -340,3 +340,210 @@ empty-state {
     display: block;
     margin-bottom: 15px;
 }
+
+/* планшеты и небольшие экраны */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    .container_track {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    .add-form h2 {
+        font-size: 1.2em;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    #instrumentName {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    
+    #addBtn {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .stat-card {
+        padding: 12px 8px;
+    }
+    
+    .stat-number {
+        font-size: 1.8em;
+    }
+    
+    .stat-label {
+        font-size: 0.75em;
+    }
+    
+    .filters {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .Instrument-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .instrument-card {
+        padding: 15px;
+    }
+    
+    .instrument-name {
+        font-size: 1.1em;
+    }
+    
+    .progress-label {
+        font-size: 0.8em;
+    }
+    
+    .hours-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hours-input input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .hours-input button {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .instrument-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .complete-btn, .delete-btn {
+        padding: 10px;
+    }
+    
+    .empty-state {
+        padding: 40px 15px;
+        font-size: 1em;
+    }
+    
+    .empty-state:before {
+        font-size: 2.5em;
+    }
+}
+
+/* маленькие телефоны */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container_track {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .stat-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        text-align: left;
+    }
+    
+    .stat-number {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    
+    .stat-label {
+        font-size: 0.85em;
+    }
+    
+    .filters {
+        gap: 6px;
+    }
+    
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .instrument-card {
+        padding: 12px;
+    }
+    
+    .instrument-name {
+        font-size: 1em;
+    }
+    
+    .instrument-status {
+        padding: 4px 8px;
+        font-size: 0.7em;
+    }
+    
+    .progress-bar {
+        height: 6px;
+    }
+    
+    .hours-input input, 
+    .hours-input button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* горизонтальный экран */
+@media (max-width: 768px) and (orientation: landscape) {
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .Instrument-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .instrument-actions {
+        flex-direction: row;
+    }
+    
+    .hours-input {
+        flex-direction: row;
+    }
+}
+
